@@ -1,0 +1,379 @@
+/*Paleta de colores
+Amarillo: #EAC926;
+Azul: #03264C;
+Celeste: #1259c3;
+Gris oscuro: #666;
+Gris claro: #ebebeb;
+Verde: #39b54a;*/
+
+/*Tipografia*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+/*Codigo*/
+/*General*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'roboto';
+    background-color: #ebebeb;
+}
+
+p {
+    font-size: 12px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/*header*/
+.header-style {
+    background-color: #EAC926;
+    padding: 10px;
+}
+
+.top-header{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+    width: 100%;
+}
+
+.contenedor-logo, .form{
+    width: 50%;
+}
+
+header div.logo{
+    padding: 10px;
+}
+
+header .form{
+    display: flex;
+    justify-content: center;
+    height: 40px;
+}
+
+.search-example{
+    width: 70%;
+}
+
+.icon-search{
+    width: 20%;
+}
+
+header nav ul li{
+    display: inline;
+    padding: 5px;
+    width: 14%;
+}
+
+.info-header {
+    text-align: center;
+}
+
+.navBar{
+    display: none;
+}
+
+.burgerMenu {
+    width: 40px;
+    height: 40px;
+    background-color: #1259c3;  
+    font-size: 20px;
+    margin: auto;
+    text-align: center;
+    color: #ebebeb;
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+/*Main*/
+.main-section {
+    width: 90%;
+    margin: 0 5%;
+}
+
+.logo-main {
+    width: 100%;
+}
+
+.titularMain {
+    font-size: 24px;
+    text-align: center;
+}
+
+.productos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+.producto {
+    margin-bottom: 10px;
+    background-color: white;
+    width: 100%;
+   
+}
+
+.img-producto {
+    width: 80%;
+    margin: 0px 10%;
+}
+
+.info-producto {
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+main section article i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    color: #39b54a;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    top: -15px;
+    right: 20px;
+    position:absolute;
+    transition: all 500ms;
+    }
+
+
+  
+.precio {
+    font-size: 18px;
+    flex-grow: 0.3;
+    margin-bottom: 10px;
+}
+
+.descuento {
+    font-size: 16px;
+    color: #39b54a;
+    flex-grow: 0.7;
+}
+
+.descripciones {
+    display: none;
+}
+
+
+
+/*Footer*/
+
+.Footer {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.icon-footer {
+    font-size: 2em;
+    color: #1259c3;
+}
+
+
+.title-footer {
+    margin: 0px;
+    color: #666;
+}
+
+.text-footer {
+    margin-top: 0px;
+    max-width: 80%;
+    margin: 0px 10%;
+}
+
+/*Media querie*/
+
+@media (min-width: 361px) {
+
+    .producto:hover .descripciones {
+        display: block;
+        width: 100%;
+    }
+
+    .producto:hover i{
+        transform: rotate(-90deg);
+    }
+
+    header div.contenedor-logo, 
+    header .form, header .comprar-cuota{
+    width: 33%;
+    }
+
+
+    .producto {
+        font-size: 16px;
+        width: 45%;
+        margin: 10px 5px;
+    }
+
+    .producto:hover{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    .navBar{
+        display: flex;
+        justify-content: space-between;
+
+    }
+    
+    .navBar ul{
+        list-style: none;
+        font-size: 11px;
+    }
+
+    .burgerMenu{
+        display: none;
+    }
+
+    /*register*/
+    .container-form-register, .container-form-login{
+        max-width: 650px;
+    }
+
+}
+
+@media (min-width: 794px){
+    .producto{
+        width: 22%;
+        margin: 0px 5px;
+    }
+
+    .navBar{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    
+    }
+
+    .navBar ul{
+        font-size: 16px;
+    }
+    .style-footer{
+        display: flex;
+        margin-top: 20px;
+        background-color: white;
+        padding: 10px;
+    }
+
+    .icon-footer:hover{
+        color: #39b54a;
+    }
+}
+
+
+
+/*Style- register*/
+.main-style-register{
+    padding: 5px;
+}
+
+.title-section-register{
+    text-align: center;
+    font-size: 30px;
+    font-style: italic;
+    padding: 12px;
+}
+
+.container-form-register{
+    width: 90%;
+    margin: auto;
+    border: black 1px dashed;
+    background-color: #EAC926;
+    
+}
+
+.form-register{
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.form-section-title{
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.file-register{
+    width: 100%;
+}
+
+.form-section-content{
+    display: block;
+    background-color: #ebebeb;
+    font-size: 15px;
+    width: 100%;
+    height: 35px;
+    padding: 3px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: solid 1px black;
+}
+
+.item-avanzado{
+    margin: 10px 10px;
+}
+
+.container-button-register{
+    display: flex;
+    justify-content: center;
+}
+
+.button-register{
+    background-color: #666;
+    font-weight: bold;
+    width: 40%;
+    height: 30px;
+    border-radius: 5px;
+    border: solid 1.5px black;
+}
+
+.register-enviar{
+    margin-right: 10px;
+}
+
+/*Style- login*/
+.title-section-login{
+    text-align: center;
+    font-size: 30px;
+    font-style: italic;
+    padding: 12px;
+}
+
+.container-form-login{
+    width: 90%;
+    margin: auto;
+    padding: 10px;
+    border: black 1px dashed;
+    background-color: #EAC926;
+    
+}
+
+.container-button-login{
+    display: flex;
+    justify-content: center;
+}
+
+.button-login{
+    background-color: #666;
+    font-weight: bold;
+    width: 40%;
+    height: 30px;
+    border-radius: 5px;
+    border: solid 1.5px black;
+}
+
+.boton:hover{
+    background-color: #0022AA;
+}

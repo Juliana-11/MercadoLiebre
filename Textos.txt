@@ -1,0 +1,31 @@
+.icono-posicion{
+    display: block;
+    position: absolute;
+    right: 45px;
+
+}
+
+.icono-article-producto{
+    background-color: white;
+    border: #39b54a 1px solid;
+    border-radius: 50px;
+    width: 30px;
+    height: 30px;
+    color: #39b54a;
+    padding: 5px;
+    
+    
+}
+
+
+<form class="form" action="#" method="GET">
+                    <d class="input">Buscar productos, marcas y más</div>
+                    <div class="submit"><i class="fa fa-search"></i></div>
+                </form>
+
+<div class="tamañoForm">
+                <form action="#" method="get" class="form-search" >
+                    <input type="text" placeholder="Buscar productos, marcas y más">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </form> 
+            </div>
