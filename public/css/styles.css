@@ -200,6 +200,11 @@ main section article i{
     margin: 0px 10%;
 }
 
+.end-footer{
+    font-weight: bold;
+    margin: auto;
+}
+
 /*Media querie*/
 
 @media (min-width: 320px) {
