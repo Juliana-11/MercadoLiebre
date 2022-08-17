@@ -49,6 +49,7 @@ a{
 
 header div.logo{
     padding: 10px;
+    max-width: 350px;
 }
 
 header .form{
@@ -180,6 +181,7 @@ main section article i{
 .icon-footer {
     font-size: 2em;
     color: #1259c3;
+    margin-bottom: 10px;
 }
 
 
@@ -196,7 +198,7 @@ main section article i{
 
 /*Media querie*/
 
-@media (min-width: 361px) {
+@media (min-width: 320px) {
 
     .producto:hover .descripciones {
         display: block;
